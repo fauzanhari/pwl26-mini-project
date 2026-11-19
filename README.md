@@ -139,17 +139,25 @@ Hasil yang diharapkan:
 
 ## Screenshot Pengujian
 
-```markdown
+### 1. Transaksi Berhasil
+
 ![Transaksi Berhasil](screenshot/1.sukses.png)
+
+### 2. Stok Tidak Mencukupi
 
 ![Stok Tidak Mencukupi](screenshot/2.gacukup.png)
 
+### 3. Pengujian Rollback
+
 ![Rollback](screenshot/3.rollback.png)
+
+### 4. Database Order
 
 ![Database Order](screenshot/4.databaseorder.png)
 
+### 5. Database Product
+
 ![Database Product](screenshot/5.databaseproduct.png)
-```
 
 ## Deklarasi Penggunaan AI
 
