@@ -1,0 +1,2 @@
+import {Request,Response,NextFunction} from "express";import {orderService} from "../services/orderService";
+export const orderController={list:async(req:Request,res:Response,next:NextFunction)=>{try{res.json(await orderService.list());}catch(e){next(e)}},get:async(req:Request,res:Response,next:NextFunction)=>{try{res.json(await orderService.get(Number(req.params.id)));}catch(e){next(e)}},create:async(req:Request,res:Response,next:NextFunction)=>{try{res.status(201).json(await orderService.create(req.body));}catch(e){next(e)}}};

@@ -1,0 +1,2 @@
+import {Router} from "express";import {productController} from "../controllers/productController";import {productSchema} from "../validators/productValidator";import {validate} from "../utils/validate";
+const router=Router();router.get("/",productController.list);router.get("/:id",productController.get);router.post("/",validate(productSchema),productController.create);router.put("/:id",validate(productSchema),productController.update);router.delete("/:id",productController.remove);export default router;

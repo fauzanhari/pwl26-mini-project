@@ -1,0 +1,2 @@
+import express from "express";import productRoutes from "./src/routes/productRoutes";import orderRoutes from "./src/routes/orderRoutes";import {logger} from "./src/middleware/logger";import {notFound} from "./src/middleware/notFound";import {errorHandler} from "./src/middleware/errorHandler";
+const app=express();app.use(express.json());app.use(logger);app.get("/",(req,res)=>res.json({status:"success",message:"Products & Orders API running"}));app.use("/api/products",productRoutes);app.use("/api/orders",orderRoutes);app.use(notFound);app.use(errorHandler);export default app;

@@ -1,0 +1,63 @@
+{
+  "info": {
+    "name": "Products Orders API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Health",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:3000/"
+      }
+    },
+    {
+      "name": "Products list",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:3000/api/products?halaman=1&ukuran=10"
+      }
+    },
+    {
+      "name": "Create product",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\\\"sku\\\":\\\"SKU-004\\\",\\\"name\\\":\\\"Item Baru\\\",\\\"category\\\":\\\"General\\\",\\\"stock\\\":20,\\\"expired_date\\\":null}"
+        },
+        "url": "http://localhost:3000/api/products"
+      }
+    },
+    {
+      "name": "Orders list",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:3000/api/orders"
+      }
+    },
+    {
+      "name": "Create order",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\\\"product_id\\\":1,\\\"customer_name\\\":\\\"Andi\\\",\\\"qty\\\":5}"
+        },
+        "url": "http://localhost:3000/api/orders"
+      }
+    }
+  ]
+}
