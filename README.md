@@ -6,7 +6,7 @@
 - **NIM:** F1D02410047
 - **Mata Kuliah:** PWEB LANJUT
 - **Kelas:** C
-- **LINK YOUTUBE: :** lagi di upload pak bentar...
+- **LINK YOUTUBE: :** https://youtu.be/P0tmEAWQmn0?si=0KFIpVJPOx42nwR3
 
 ## Deskripsi Project
 
